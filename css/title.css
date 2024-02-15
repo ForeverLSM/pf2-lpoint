@@ -1,0 +1,116 @@
+#title {
+  height: calc(100%);
+  min-height: 800px;
+  position: relative;
+  padding-top: 160px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#title::before {
+  content: "";
+  width: 52%;
+  height: 280px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #35aef0;
+  border-radius: 0 140px 0 0;
+  animation-name: titlebe;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+@keyframes titlebe{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+#title>a {
+
+}
+#title>a::before {
+ content: "";
+ background-image: url(../img/title_phon_02.png);
+ background-repeat: no-repeat;
+ background-position-x: center;
+ background-position-y: bottom;
+ background-size: contain;
+ width: 244px;
+ height: 354px;
+ display: block;
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ animation-name: titleimg;
+ animation-duration: 0.7s;
+ /*! animation-timing-function: ease-in; */
+ animation-delay: 0.5s;
+/*  animation-direction: reverse; */
+ animation-fill-mode: forwards; /* 애니메이션의 마지막 상태값을 그대로 유지 */
+ z-index: 1;
+ transform: translateY(100%)
+}
+
+@keyframes titleimg{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+#title .wrap {
+  animation-name: titleT;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  width: 504px;
+}
+@keyframes titleT{
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  
+}
+
+#title .wrap h2 {
+
+}
+
+#title .wrap p {
+
+}
+#title::after {
+  content: "";
+  width: 52%;
+  height: 280px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #3356b0;
+  border-radius: 140px 0 0 0;
+  animation-name: titleaf;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+
+@keyframes titleaf{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}

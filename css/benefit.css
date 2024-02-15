@@ -1,0 +1,22 @@
+main{
+
+ }
+ section:nth-child(odd){
+ 
+ }
+ 
+ section#benefit{
+
+ }
+ section#benefit .wrap{
+  transform: translateX(-65%);
+ }
+ section#benefit .wrap>*{
+ 
+ }
+ section#benefit .wrap h2{
+ 
+ }
+ section#benefit .wrap p{
+  
+ }
